@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Software House Chat</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="header">
+        <h2>Software House</h2>
+      </div>
+      <div class="user-info">
+        <div class="avatar" id="userAvatar">U</div>
+        <span id="userName">Guest</span>
+        <button id="logoutBtn" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+      </div>
+      <nav class="channels">
+        <h3>Departments</h3>
+        <ul id="channelList">
+          <li class="channel active" data-room="general"> General</li>
+          <li class="channel" data-room="hr"> HR</li>
+          <li class="channel" data-room="finance"> Finance</li>
+          <li class="channel" data-room="development"> Development</li>
+          <li class="channel" data-room="testing"> Testing</li>
+          <li class="channel" data-room="management"> Management</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+      <div class="chat-header">
+        <h3 id="currentChannel"> General</h3>
+        <span id="typingIndicator"></span>
+      </div>
+      <div class="messages" id="messages"></div>
+      <div class="message-input">
+        <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off"/>
+        <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>

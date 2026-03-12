@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Software House Chat</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Software House Chat</h2>
+      <p>Join your team in real-time</p>
+      <input type="text" id="username" placeholder="Your Name" required />
+      <select id="department">
+        <option value="hr">HR</option>
+        <option value="finance">Finance</option>
+        <option value="development">Development</option>
+        <option value="testing">Testing</option>
+        <option value="management">Management</option>
+      </select>
+      <button id="loginBtn">Join Chat</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      const name = document.getElementById('username').value.trim();
+      const dept = document.getElementById('department').value;
+
+      if (name) {
+        localStorage.setItem('userName', name);
+        localStorage.setItem('userDept', dept);
+        localStorage.setItem('userAvatar', name.charAt(0).toUpperCase());
+        window.location.href = 'index.html';
+      } else {
+        alert('Please enter your name');
+      }
+    });
+  </script>
+</body>
+</html>

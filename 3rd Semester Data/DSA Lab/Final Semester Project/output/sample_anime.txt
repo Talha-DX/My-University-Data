@@ -1,0 +1,70 @@
+1
+Attack on Titan
+Action, Drama, Fantasy
+2013
+9.1
+75
+Wit Studio
+2
+Fullmetal Alchemist: Brotherhood
+Action, Adventure, Drama
+2009
+9.2
+64
+Bones
+3
+Death Note
+Mystery, Psychological, Thriller
+2006
+8.8
+37
+Madhouse
+4
+One Punch Man
+Action, Comedy, Sci-Fi
+2015
+8.7
+24
+Madhouse
+5
+Demon Slayer
+Action, Fantasy
+2019
+8.9
+55
+ufotable
+6
+My Hero Academia
+Action, Comedy, School
+2016
+8.4
+113
+Bones
+7
+Hunter x Hunter
+Action, Adventure, Fantasy
+2011
+9.1
+148
+Madhouse
+8
+Naruto Shippuden
+Action, Adventure, Fantasy
+2007
+8.7
+500
+Pierrot
+9
+One Piece
+Action, Adventure, Fantasy
+1999
+9.0
+1100+
+Toei Animation
+10
+Steins;Gate
+Sci-Fi, Thriller
+2011
+9.1
+24
+White Fox
